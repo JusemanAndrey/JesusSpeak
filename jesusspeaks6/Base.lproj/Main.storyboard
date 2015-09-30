@@ -1,25 +1,222 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController title="Splash screen" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alleyway6.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mri-lf-Cjs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash6.png" translatesAutoresizingMaskIntoConstraints="NO" id="suD-DL-uku">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="middle6_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="vkW-P3-tp0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jesus6_4.png" translatesAutoresizingMaskIntoConstraints="NO" id="h6u-8e-I4d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jesus6_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="STT-H1-Jiq">
+                                <rect key="frame" x="38" y="268" width="314" height="398"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light6.png" translatesAutoresizingMaskIntoConstraints="NO" id="r2l-Kt-LOz">
+                                <rect key="frame" x="64" y="327" width="269" height="186"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover_half6.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vig-XH-big">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover6.png" translatesAutoresizingMaskIntoConstraints="NO" id="XZp-kx-cG4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="suD-DL-uku" id="zt1-Wm-5kf"/>
+                        <outlet property="coverHalfImageView" destination="Vig-XH-big" id="27n-98-GPG"/>
+                        <outlet property="coverImageView" destination="XZp-kx-cG4" id="cRn-mW-kTR"/>
+                        <outlet property="jesusImageView0" destination="STT-H1-Jiq" id="rmm-Q4-RmM"/>
+                        <outlet property="jesusImageView1" destination="h6u-8e-I4d" id="3Ga-AJ-ND5"/>
+                        <outlet property="lightImageView" destination="r2l-Kt-LOz" id="lU8-FU-SNq"/>
+                        <outlet property="middleImageView" destination="vkW-P3-tp0" id="Z1y-y0-rdb"/>
+                        <outlet property="mostBackImageView" destination="Mri-lf-Cjs" id="gcp-fh-GFF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-414.5" y="179.5"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="27f-q2-n8K">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" title="Main View Controller" id="M1c-0y-h5n" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wcm-IH-Ysr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qq6-lU-2sm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TvU-s6-MG9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jesus6_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ubl-uU-F4P">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="uSi-bq-t9w">
+                                <rect key="frame" x="108" y="253" width="158" height="158"/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIV-t1-gm1">
+                                <rect key="frame" x="11" y="5" width="348" height="245"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-10" minY="90" maxX="70" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="79" minY="-40" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="ASK JESUS" image="audio.png" backgroundImage="audio_back.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downButton:" destination="M1c-0y-h5n" eventType="touchDown" id="bcz-Sc-93f"/>
+                                    <action selector="touchButton:" destination="M1c-0y-h5n" eventType="touchUpInside" id="f7f-Qx-8oZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2W-I5-mMf">
+                                <rect key="frame" x="11" y="413" width="351" height="246"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="-34" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="-89" minY="0.0" maxX="0.0" maxY="-200"/>
+                                <inset key="imageEdgeInsets" minX="112" minY="-18" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="WHO WE ARE" image="sword6_1.png" backgroundImage="whoweare_back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downButton:" destination="M1c-0y-h5n" eventType="touchDown" id="LR7-VD-hHN"/>
+                                    <action selector="touchButton:" destination="M1c-0y-h5n" eventType="touchUpInside" id="4NC-cy-LGF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="V4b-OH-WbC">
+                                <rect key="frame" x="3" y="29" width="136" height="305"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-70" minY="160" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="13" minY="46" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="read.png" backgroundImage="read_back.png">
+                                    <string key="title">READ
+THE WORD</string>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downButton:" destination="M1c-0y-h5n" eventType="touchDown" id="uhG-4t-jHd"/>
+                                    <action selector="touchButton:" destination="M1c-0y-h5n" eventType="touchUpInside" id="ugX-aY-Q8T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xCP-oS-x3R">
+                                <rect key="frame" x="234" y="26" width="137" height="300"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-44" minY="150" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="55" minY="37" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="daily.png" backgroundImage="daily_back.png">
+                                    <string key="title">DAILY
+REFLECTION</string>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downButton:" destination="M1c-0y-h5n" eventType="touchDown" id="DK8-4a-wrs"/>
+                                    <action selector="touchButton:" destination="M1c-0y-h5n" eventType="touchUpInside" id="Qnu-D9-2hb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anl-0z-iZO">
+                                <rect key="frame" x="3" y="333" width="136" height="304"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-70" minY="-40" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="25" minY="-135" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="TUNES" image="tunes.png" backgroundImage="tunes_back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downButton:" destination="M1c-0y-h5n" eventType="touchDown" id="VMT-E9-3AE"/>
+                                    <action selector="touchButton:" destination="M1c-0y-h5n" eventType="touchUpInside" id="eQ8-Qz-Dp1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-yY-BN8">
+                                <rect key="frame" x="234" y="333" width="137" height="300"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-24" minY="-36" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="50" minY="-130" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="TOPICS" image="topics.png" backgroundImage="topics_back.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downButton:" destination="M1c-0y-h5n" eventType="touchDown" id="n1s-er-Ob1"/>
+                                    <action selector="touchButton:" destination="M1c-0y-h5n" eventType="touchUpInside" id="QI0-kT-lsj"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alleyway6.png" translatesAutoresizingMaskIntoConstraints="NO" id="8up-d9-5dT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jesus6_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="7km-Ac-NIE">
+                                <rect key="frame" x="38" y="268" width="314" height="398"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover6.png" translatesAutoresizingMaskIntoConstraints="NO" id="oZB-mC-w2p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="audioButton" destination="DIV-t1-gm1" id="p4T-z1-279"/>
+                        <outlet property="backgroundImageView" destination="ubl-uU-F4P" id="BiP-ih-6Fl"/>
+                        <outlet property="circleImageView" destination="uSi-bq-t9w" id="gHl-2m-W5z"/>
+                        <outlet property="coverImageView" destination="oZB-mC-w2p" id="Cak-eR-rds"/>
+                        <outlet property="dailyButton" destination="xCP-oS-x3R" id="2fP-3z-BOa"/>
+                        <outlet property="frontImageView" destination="8up-d9-5dT" id="fms-nV-KW2"/>
+                        <outlet property="jesusImageView" destination="7km-Ac-NIE" id="W1E-rz-PBA"/>
+                        <outlet property="readButton" destination="V4b-OH-WbC" id="Ayi-h7-Zsw"/>
+                        <outlet property="topicsButton" destination="EWz-yY-BN8" id="aSD-IJ-YUN"/>
+                        <outlet property="tunesButton" destination="Anl-0z-iZO" id="pkG-Kl-889"/>
+                        <outlet property="whoareweButton" destination="Z2W-I5-mMf" id="343-Mc-jHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w18-em-n7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.5" y="179.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alleyway6.png" width="375" height="667"/>
+        <image name="audio.png" width="93" height="93"/>
+        <image name="audio_back.png" width="348" height="245"/>
+        <image name="circle.png" width="160" height="160"/>
+        <image name="cover6.png" width="375" height="667"/>
+        <image name="cover_half6.png" width="375" height="667"/>
+        <image name="daily.png" width="63" height="62"/>
+        <image name="daily_back.png" width="136" height="303"/>
+        <image name="jesus6_0.png" width="314" height="398"/>
+        <image name="jesus6_2.png" width="375" height="667"/>
+        <image name="jesus6_4.png" width="375" height="667"/>
+        <image name="light6.png" width="269" height="186"/>
+        <image name="middle6_2.png" width="375" height="667"/>
+        <image name="read.png" width="52" height="64"/>
+        <image name="read_back.png" width="136" height="307"/>
+        <image name="splash6.png" width="375" height="667"/>
+        <image name="sword6_1.png" width="114" height="195"/>
+        <image name="topics.png" width="59" height="59"/>
+        <image name="topics_back.png" width="137" height="303"/>
+        <image name="tunes.png" width="52" height="53"/>
+        <image name="tunes_back.png" width="136" height="307"/>
+        <image name="whoweare_back.png" width="351" height="246"/>
+    </resources>
 </document>

@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSTimer *imageUpdateTimer;
+}
 
+@property (weak, nonatomic) IBOutlet UIImageView *mostBackImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *middleImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *jesusImageView0;
+@property (weak, nonatomic) IBOutlet UIImageView *jesusImageView1;
+@property (weak, nonatomic) IBOutlet UIImageView *coverHalfImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *lightImageView;
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 
 @end
+
 
